@@ -1,30 +1,20 @@
 import Vue from 'vue'
-import BootstrapVue from 'bootstrap-vue';
 import App from './App.vue'
+import vuetify from './plugins/vuetify';
+import VueYouTubeEmbed from 'vue-youtube-embed'
+// import firebase from 'firebase/app'
+// import 'firebase/firestore'
 
-import AnimateOnVisible from "./components/AnimateOnVisible.vue"
-
-Vue.use(BootstrapVue)
-
-import VueTimeline from "@growthbunker/vuetimeline";
-
-Vue.use(VueTimeline);
-
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCopyright} from '@fortawesome/free-solid-svg-icons'
-import { faFacebookSquare, faInstagramSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-library.add(faCopyright, faFacebookSquare, faInstagramSquare, faLinkedin, faGithubSquare)
-
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-Vue.component('AnimateOnVisible', AnimateOnVisible)
+Vue.use(VueYouTubeEmbed)
 Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+// firebase.initializeApp({
+//  Configurações do seu app
+// })
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-import './styles/global.scss'
+// export const db = firebase.firestore()
+
+new Vue({
+  vuetify,
+  render: h => h(App)
+}).$mount('#app')

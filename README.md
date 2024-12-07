@@ -1,86 +1,57 @@
-<h1 align="center">VueJS portfolio template</h1>
+# Vuetify Landing Page Template
 
-> Portfolio template using VueJs framework, CosmicJS API and Bootstrap
+#### This is an example of a landing page built with vue and vuetify.
 
 
-<img align="center" src="doc/portfolio-vuejs_demo.gif" alt="portfolio-vuejs preview"></img>
+## 🚀 Project setup
 
----
+Use [git](https://git-scm.com/) to clone the project.
 
-## Table of Contents
-
-- [Features](#features)
-- [Setup](#project-setup)
-- [Edit Content](#how-to-edit-content)
-- [Author](#author)
-- [Contributing](#-contributing)
-- [License](#-license)
-
----
-
-## Features
-- Builded with VueJs framework ✨
-- One page layout ✨
-- Material design ✨
-- Bootstrap 4.5 & SCSS ✨
-- Responsive ✨
-- Animated layout ✨
-- Content managed with CosmicJS API ✨
-
-## Project setup
+```bash
+git clone https://github.com/Joabsonlg/vuetify-landing-page.git
 ```
-npm install
+Enter the project.
+```bash
+cd vuetify-landing-page
 ```
-### Compiles and hot-reloads for development
+Use [npm](https://www.npmjs.com/) to install dependencies.
+```bash
+npm i
 ```
+
+
+## ☄️ Usage
+
+Compiles and hot-reloads for development
+```bash
 npm run serve
 ```
-### Compiles and minifies for production
-```
+
+Compiles and minifies for production
+```bash
 npm run build
 ```
-### Lints and fixes files
-```
-npm run lint
-```
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
-## How to edit content
-This template have a CMS support with CosmicJS. You can easily put your content there by creating and linking your CosmicJS account. 
+### 🛠️ Technologies
 
-In order to customize your portfolio, you must create a CosmicJS account and a new fresh bucket on it. Once done, you must update credentials of the **.env** file.
+The following tools were used in the construction of the project:
 
-To do this, you just have to modify the variables contained in the ENV file (API token, bucket slug and read key).
+- [Vue.js](https://vuejs.org/)
+- [Vuetify.js](https://vuetifyjs.com/)
+- [Firebase](https://firebase.google.com/)
 
-```env
-# CosmicJS 
-VUE_APP_COSMICJS_TOKEN=" "
-VUE_APP_COSMICJS_BUCKET_SLUG=" "
-VUE_APP_COSMICJS_BUCKET_READ_KEY=" "
-```
+## ⚖️ Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-After that, you need to create the object type and data we will use. To do that properly and easily, you can import the json file, located [inside the data folder of this repo](https://github.com/viryl15/vuejs-portfolio/tree/main/data/portfolio-vuejs_import.json), by accessing import/export settings inside your bucket settings page.
+Please make sure to update tests as appropriate.
 
-Now, you can customize it with your data through CosmicJS interface!
-## Author
+## 👷‍♂️ Author
+<a href="https://github.com/Joabsonlg">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/41306493?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Joabson Arley</b></sub></a> <a href="https://github.com/Joabsonlg" title="Github">🚀</a>
 
-👤 **Viryl Scott**
+[![Gmail Badge](https://img.shields.io/badge/-joabsonlg918@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:joabsonlg918@gmail.com)](mailto:joabsonlg918@gmail.com)
 
-* Github: [@viryl15](https://github.com/viryl15)
-* Gitlab: [@viryl15](https://gitlab.com/viryl15)
-* LinkedIn: [@viryl](https://www.linkedin.com/in/rovel-dylan-tematio-zambou-596303172/)
-* Portfolio: [viryl15](https://viryl15.github.io/vuejs-portfolio/)
-* Twitter: [@viryl3](https://twitter.com/Viryl3)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/viryl15/portfolio-vuejs/issues). 
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-## 📝 License
-
-This project is under [MIT](https://github.com/viryl15/portfolio-vuesjs/blob/master/LICENSE) license.
+## 🔑 License
+[MIT](https://github.com/Joabsonlg/vuetify-landing-page/blob/master/LICENSE)
