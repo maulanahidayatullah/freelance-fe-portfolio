@@ -6,7 +6,6 @@
         <v-row>
           <v-col cols="12">
             <div style="position: relative; z-index: 9999" class="mt-16">
-              <!-- <h1 class="text-grey"></h1> -->
               <h1 class="text-white">Like Project</h1>
               <span class="text-grey">Portfolio</span><br />
             </div>
@@ -14,88 +13,25 @@
         </v-row>
       </div>
       <v-col cols="12" class="mt-16" id="about">
-        <div class="text-center mt-4">
-          <h2>What we Do</h2>
-          <div style="width: 120px; margin: 0 auto">
-            <v-slider v-model="slider2" color="red" label="track-color"></v-slider>
-          </div>
-          <div class="first" id="project">
-            <v-row>
-              <v-col cols="12">
-                <div class="child">
-                  <v-btn icon="fas fa-laptop" color="#FBDF7E" class="text-white"></v-btn>
-                  <h3 class="ml-3 mt-4">Web Design</h3>
-                  <p class="text-grey ml-3 mt-4 text-caption">
-                    Lorem, ipsum dolor sit amet <br />consectetur adipisicing
-                    <br />consectetur adipis
-                  </p>
-                </div>
-                <div class="child">
-                  <v-btn icon="fas fa-mobile-alt" color="#FBDF7E" class="text-white"></v-btn>
-                  <h3 class="ml-3 mt-4">App Design</h3>
-                  <p class="text-grey ml-3 mt-4 text-caption">
-                    Lorem, ipsum dolor sit amet <br />consectetur adipisicing
-                    <br />consectetur adipis
-                  </p>
-                </div>
-                <div class="child">
-                  <v-btn icon="fas fa-camera" color="#FBDF7E" class="text-white"></v-btn>
-                  <h3 class="ml-3 mt-4">Photography</h3>
-                  <p class="text-grey ml-3 mt-4 text-caption">
-                    Lorem, ipsum dolor sit amet <br />consectetur adipisicing
-                    <br />consectetur adipis
-                  </p>
-                </div>
-              </v-col>
-            </v-row>
-            <v-divider></v-divider>
-          </div>
-        </div>
+        <PortfolioView />
       </v-col>
     </v-container>
-    <!-- <FooterView /> -->
   </v-app>
 </template>
 
 <script>
 import { defineComponent } from "vue";
 import NavBar from "../components/NavBar.vue";
-// import FooterView from "../components/FooterView.vue";
+import PortfolioView from "../components/PortfolioView.vue";
 
 // Components
 //import HelloWorld from '../components/HelloWorld.vue';
 
 export default defineComponent({
   name: "HomeView",
-  setup() {
-    return {
-      slider2: 50,
-
-      items: [
-        {
-          img: "i3.jpg",
-        },
-        {
-          img: "i4.jpg",
-        },
-        {
-          img: "i5.jpg",
-        },
-        {
-          img: "i6.jpeg",
-        },
-        {
-          img: "i9.jpg",
-        },
-        {
-          img: "i8.jpg",
-        },
-      ],
-    };
-  },
   components: {
     NavBar,
-    // FooterView
+    PortfolioView
   },
 });
 </script>
