@@ -1,20 +1,14 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
-import vuetify from './plugins/vuetify';
-import VueYouTubeEmbed from 'vue-youtube-embed'
-// import firebase from 'firebase/app'
-// import 'firebase/firestore'
+import router from './router'
+import store from './store'
+import vuetify from './plugins/vuetify'
+import { loadFonts } from './plugins/webfontloader'
 
-Vue.use(VueYouTubeEmbed)
-Vue.config.productionTip = false
+loadFonts()
 
-// firebase.initializeApp({
-//  Configurações do seu app
-// })
-
-// export const db = firebase.firestore()
-
-new Vue({
-  vuetify,
-  render: h => h(App)
-}).$mount('#app')
+createApp(App)
+  .use(router)
+  .use(store)
+  .use(vuetify)
+  .mount('#app')

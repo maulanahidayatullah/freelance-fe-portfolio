@@ -1,16 +1,21 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib';
+// Styles
+import '@fortawesome/fontawesome-free/css/all.css'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import '@mdi/font/css/materialdesignicons.css'
+import { aliases, fa } from 'vuetify/iconsets/fa'
+import 'vuetify/styles'
 
-Vue.use(Vuetify);
+// Vuetify
+import { createVuetify } from 'vuetify'
 
-export default new Vuetify({
-    theme: {
-        themes: {
-            light: {
-                primary: "#119DA4",
-                secondary: "#171b34",
-                accent: "3D87E4"
-            }
-        }
-    }
-});
+export default createVuetify(
+ {
+  icons: {
+    defaultSet: 'fa',
+    aliases,
+    sets: {
+      fa,
+    },
+},
+ }
+)
